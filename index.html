@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Not Angka Menjadi Fungsi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ubah Not Angka Menjadi Fungsi</h1>
+        <div class="input-section">
+            <label for="function-type">Pilih Salah Satu Jenis Fungsi:</label>
+            <select id="function-type">
+                <option value="linear">Fungsi Linear</option>
+                <option value="quadratic">Fungsi Kuadrat</option>
+            </select>
+            <label for="function-formula">Pilih Salah Satu Rumus Fungsi:</label>
+            <select id="function-formula"></select>
+            <div id="formula-preview" class="formula-preview"></div>
+            <label for="function-domains">Masukkan Domain (pisahkan dengan koma):</label>
+            <input type="text" id="function-domains" placeholder="Contoh: -5,-4,-3,-2,-1,0,1,2,3,4,5">
+            <button id="calculate-button">Hitung</button>
+        </div>
+        <div class="result-section">
+            <h2>Hasil:</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
